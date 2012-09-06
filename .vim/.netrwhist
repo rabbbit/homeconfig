@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/pkroliko/git/PROJ-Playtech/feeds/ussport/python'
+let g:netrw_dirhist_2='/home/pkroliko/git/PROJ-Playtech/sportsbook/apps/ticker/html'
+let g:netrw_dirhist_3='/home/pkroliko/git/PROJ-Playtech/sportsbook/apps/ticker'
+let g:netrw_dirhist_4='/home/pkroliko/git/PROJ-Playtech/sportsbook/apps/ticker/python'
