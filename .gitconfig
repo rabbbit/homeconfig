@@ -1,0 +1,15 @@
+[user]
+	name = Pawel Krolikowski
+	email = pawel.krolikowski@geneity.co.uk
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+	pager = true
+
+[alias]
+	meld = !~/.tools/git-meld/git-meld.pl
+	bname = !basename $(git symbolic-ref HEAD)
+    bnames = submodule foreach git bname ||:
+[core]
+	excludesfile = /home/pkroliko/.gitignore/.global_gitignore

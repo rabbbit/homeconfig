@@ -1,3 +1,7 @@
+set nocompatible
+
+set showcmd
+
 filetype off 
 
 call pathogen#infect()
