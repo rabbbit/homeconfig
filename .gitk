@@ -21,7 +21,7 @@ set fgcolor black
 set colors {green red blue magenta darkgrey brown orange}
 set diffcolors {red "#00a000" blue}
 set markbgcolor #e0e0ff
-set diffcontext 200200
+set diffcontext 20
 set selectbgcolor gray85
 set extdifftool meld
 set perfile_attrs 0
@@ -31,6 +31,6 @@ set geometry(topwidth) 1845
 set geometry(topheight) 225
 set geometry(pwsash0) "658 1"
 set geometry(pwsash1) "991 1"
-set geometry(botwidth) 816
+set geometry(botwidth) 1494
 set geometry(botheight) 906
 set permviews {}
