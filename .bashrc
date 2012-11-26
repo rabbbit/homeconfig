@@ -103,11 +103,12 @@ fi
 PS1='\[\e[0;32m\]\u@\h\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\] \[\e[0;37m\]\[\e[m\]'
 
 # common history on all terminals
-export PROMPT_COMMAND="history -a; history -n"
+export PROMPT_COMMAND="history -a"
 HISTFILESIZE=1000000
 HISTSIZE=1000000
 HISTCONTROL=ignoreboth
+HISTTIMEFORMAT='%F %T '
 
-source .genbashrc
+source ~/.genbashrc
 
 alias homeconfig='git --git-dir=/home/pkroliko/.homeconfig.git/ --work-tree=/home/pkroliko'
