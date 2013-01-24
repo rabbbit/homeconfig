@@ -234,12 +234,13 @@ set pastetoggle=<F4>
 
 
 " buffers - show with F5
-" noremap <F5> :ls!<CR>
+noremap <F5> :ls!<CR>
 
 " cross hairs on f5
 nnoremap <leader>tc :set cursorline!<cr>:set cursorcolumn!<cr>
 "nmap <F5> <leader>tc
 
+nnoremap <F6> :Errors<cr>
 
 " registers - show with F6
 "noremap <F6> :reg<CR>
