@@ -18,6 +18,7 @@
 	shat = show --stat
 	alias = config --global --get-regexp "alias.*"
 	justchanged = log --date=short --pretty=\"%Cblue%h%Creset %cd %Cgreen%cE%Creset %Cred%s%Creset\" ORIG_HEAD..HEAD
+	sgrep = "!f() { git grep \"$1\"|grep \"$1\"; git submodule foreach \"git grep '$1'; true\" | grep -B 1 \"$1\"; }; f"
 [core]
 	excludesfile = /home/pkroliko/.gitignore/.global_gitignore
 

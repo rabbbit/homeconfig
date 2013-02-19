@@ -92,6 +92,7 @@ alias la='ls -A'
 alias l='ls -CF'
 
 alias ggrep='git grep -ni'
+alias sgrep='git sgrep'
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -112,3 +113,7 @@ HISTTIMEFORMAT='%F %T '
 source ~/.genbashrc
 
 alias homeconfig='git --git-dir=/home/pkroliko/.homeconfig.git/ --work-tree=/home/pkroliko'
+
+
+# make SQLPLUS load default configs on start
+export SQLPATH=~/.sqlplus/
