@@ -238,17 +238,20 @@ noremap <F5> :ls!<CR>
 nnoremap <leader>tc :set cursorline!<cr>:set cursorcolumn!<cr>
 "nmap <F5> <leader>tc
 
+"syntastic
 nnoremap <F6> :Errors<cr>
+
+" taglist.vim
+nnoremap <silent> <F7> :TlistToggle<CR>
 
 " registers - show with F6
 "noremap <F6> :reg<CR>
-
 " tags - show with F7
 " not that useful!
 " noremap <F7> :tags<CR>
 
 " F7 gdiff
-nmap <F7> <leader>gd
+"nmap <F7> <leader>gd
 "imap <F7> <C-O><leader>gd
 "
 " F8 gblame

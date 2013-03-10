@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/home/pkroliko/git/PROJ-Playtech/sportsbook/apps/admin/html'
-let g:netrw_dirhist_2='/home/pkroliko/git/PROJ-Playtech/sportsbook/apps/admin/html/ev_setup'
-let g:netrw_dirhist_3='/home/pkroliko/git/PROJ-Playtech/sportsbook/apps/python/sportsbook/content_iface'
-let g:netrw_dirhist_4='/home/pkroliko/git/PROJ-Playtech/sportsbook/apps/python/sportsbook'
-let g:netrw_dirhist_5='/home/pkroliko/git/PROJ-Playtech/sportsbook/apps/python/sportsbook/bip'
-let g:netrw_dirhist_6='/home/pkroliko/git/PROJ-Playtech/sportsbook/apps/python/sportsbook'
