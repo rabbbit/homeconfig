@@ -112,8 +112,13 @@ HISTTIMEFORMAT='%F %T '
 
 source ~/.genbashrc
 
-alias homeconfig='git --git-dir=/home/pkroliko/.homeconfig.git/ --work-tree=/home/pkroliko'
+alias homeconfig='git --git-dir=/home/pawe/.homeconfig.git/ --work-tree=/home/pawe'
 
 
 # make SQLPLUS load default configs on start
 export SQLPATH=~/.sqlplus/
+
+# some functions found over the internet
+function lt() { ls -ltrsa "$@" | tail; }
+function psgrep() { ps axuf | grep -v grep | grep "$@" -i --color=auto; }
+function fname() { find . -iname "*$@*"; }
