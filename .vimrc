@@ -1,7 +1,5 @@
 set nocompatible
 
-set showcmd
-
 filetype off 
 
 call pathogen#infect()
@@ -500,3 +498,40 @@ inoremap jj <ESC>
 
 " don't hold onto old fugitive buffers http://vimcasts.org/episodes/fugitive-vim-browsing-the-git-object-database/
 au BufReadPost fugitive://* set bufhidden=delete
+
+
+" VUNDLE config: https://github.com/gmarik/vundle
+"
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+" My Bundles here:
+"
+" original repos on github
+Bundle 'tpope/vim-pathogen'
+Bundle 'tpope/vim-fugitive'
+Bundle 'kien/ctrlp.vim'
+Bundle 'scrooloose/syntastic'
+Bundle 'tpope/vim-unimpaired'
+Bundle 'jnurmine/Zenburn'
+" vim-scripts repos
+Bundle 'taglist.vim'
+" non github repos
+" Bundle 'git://git.wincent.com/command-t.git'
+Bundle 'git://github.com/scrooloose/syntastic.git'
+ " ...
+
+ filetype plugin indent on     " required!
+ "
+ " Brief help
+ " :BundleList          - list configured bundles
+ " :BundleInstall(!)    - install(update) bundles
+ " :BundleSearch(!) foo - search(or refresh cache first) for foo
+ " :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+ "
+ " see :h vundle for more details or wiki for FAQ
+ " NOTE: comments after Bundle command are not allowed..
