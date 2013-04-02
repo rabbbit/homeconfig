@@ -122,3 +122,5 @@ export SQLPATH=~/.sqlplus/
 function lt() { ls -ltrsa "$@" | tail; }
 function psgrep() { ps axuf | grep -v grep | grep "$@" -i --color=auto; }
 function fname() { find . -iname "*$@*"; }
+
+set -o vi
