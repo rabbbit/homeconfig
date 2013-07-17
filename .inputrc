@@ -1,1 +1,7 @@
-set editing-mode vi
+#set editing-mode vi
+
+#complete -r vim
+# not sure what this does 
+#Tab: complete
+#set disable-completion On
+set completion-ignore-case On

@@ -525,7 +525,7 @@ Bundle 'jnurmine/Zenburn'
 Bundle 'taglist.vim'
 " non github repos
 " Bundle 'git://git.wincent.com/command-t.git'
-Bundle 'git://github.com/scrooloose/syntastic.git'
+" Bundle 'git://github.com/scrooloose/syntastic.git'
  " ...
 
  filetype plugin indent on     " required!
@@ -538,3 +538,52 @@ Bundle 'git://github.com/scrooloose/syntastic.git'
  "
  " see :h vundle for more details or wiki for FAQ
  " NOTE: comments after Bundle command are not allowed..
+ "
+
+" taglist vim config
+"
+" close if only tlist is open
+let Tlist_Exit_OnlyWindow = 1
+
+" close tags for inactive windows
+let Tlist_File_Fold_Auto_Close = 1
+
+" single click to select tag
+" let Tlist_Use_SingleClick = 1
+
+" taglist is a little too narrow ( default 30 )
+let Tlist_WinWidth = 40
+
+" gain focus when tlist is opened
+let Tlist_GainFocus_On_ToggleOpen = 1
+
+" display prototype
+let Tlist_Display_Prototype = 1
+
+" disable fold column (?)
+let Tlist_Enable_Fold_Column = 1
+
+" try make it update tags a little faster ( do not set in lower than 1 sec)
+setlocal updatetime=4000
+
+" use right window
+let Tlist_Use_Right_Window = 0
+
+" limit autocompletion scanning
+set complete=.,w,b,u,t
+
+
+
+"folding settings
+set foldmethod=indent   "fold based on indent
+set foldnestmax=10      "deepest fold is 10 levels
+set nofoldenable        "dont fold by default
+set foldlevel=1         "this is just what i use
+
+
+nnoremap <space> za
+
+vnoremap <space> zf
+
+set titleold=""
+set titlestring=VIM:\%F
