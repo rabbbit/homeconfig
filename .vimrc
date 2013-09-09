@@ -111,11 +111,17 @@ noremap k gk
 noremap <Down> gj
 noremap <Up> gk
 
+" show extra whitespace
+:highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
+" :match ExtraWhitespace /\s\+$/ 
+" don't show when im typing? 
+:match ExtraWhitespace /\s\+\%#\@<!$/
+
 " Disable annoyances
 "
 " Shamed into reneabling q macros by Farmer and Oli
 " " disable annoying 'q' command until I understand what it does properly
-" noremap q ""
+noremap q ""
 "
 " This one enters ex mode.
 nmap Q ""
