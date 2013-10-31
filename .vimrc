@@ -111,11 +111,6 @@ noremap k gk
 noremap <Down> gj
 noremap <Up> gk
 
-" show extra whitespace
-:highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
-" :match ExtraWhitespace /\s\+$/ 
-" don't show when im typing? 
-:match ExtraWhitespace /\s\+\%#\@<!$/
 
 " Disable annoyances
 "
@@ -593,3 +588,11 @@ vnoremap <space> zf
 
 set titleold=""
 set titlestring=VIM:\%F
+
+
+" match extra whitespace 
+" show extra whitespace
+highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
+match ExtraWhitespace /\s\+\%#\@<!$/
+" :match ExtraWhitespace /\s\+$/ 
+" don't show when im typing? 
