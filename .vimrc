@@ -26,10 +26,8 @@ set backup " enable backups
 " so imap abc <c-o>do_thing allows a single command to work in insert mode.
 " to see where a mapping was made, can run :verbose map (for all commands) or
 " :verbose map <cmd> - see :help map-listing
-
-"bind ctrl-s to :w
-nnoremap <silent> <C-S> :if expand("%") == ""<CR>browse confirm w<CR>else<CR>confirm w<CR>endif<CR>
-imap <c-s> <c-o><c-s>
+"
+set guifont=Monospace:h9
 
 imap <c-a> <esc>ggVG
 nnoremap <c-a> ggVG
@@ -116,7 +114,7 @@ noremap <Up> gk
 "
 " Shamed into reneabling q macros by Farmer and Oli
 " " disable annoying 'q' command until I understand what it does properly
-noremap q ""
+" noremapq ""
 "
 " This one enters ex mode.
 nmap Q ""
