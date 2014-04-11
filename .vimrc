@@ -27,7 +27,7 @@ set backup " enable backups
 " to see where a mapping was made, can run :verbose map (for all commands) or
 " :verbose map <cmd> - see :help map-listing
 "
-set guifont=Monospace:h9
+set guifont=Monospace\ 9
 
 imap <c-a> <esc>ggVG
 nnoremap <c-a> ggVG
