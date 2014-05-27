@@ -29,6 +29,8 @@ set backup " enable backups
 "
 set guifont=Monospace\ 9
 
+set backspace=2
+
 imap <c-a> <esc>ggVG
 nnoremap <c-a> ggVG
 
@@ -71,6 +73,7 @@ set showcmd
 " don't expand tabs
 set tabstop=4
 set shiftwidth=4
+set noexpandtab
 " expandtab inserts tabs instead of spaces
 " set expandtab
 " smarttab changes spaces inserted at the start of a line when tabbing
@@ -290,7 +293,7 @@ au BufNewFile,BufRead *.py iab esql odb.execute_sql
 au BufNewFile,BufRead *.py iab esto odb.execute
 au BufNewFile,BufRead *.py iab epro odb.execute_proc
 au BufNewFile,BufRead *.py iab efun odb.execute_func
-au BufNewFile,BufRead *.py iab pdbreak import pdb; pdb.set_trace()
+au BufNewFile,BufRead *.py iab importpdb import pdb; pdb.set_trace()
 
 "------------------
 " JAVASCRIPT
@@ -509,7 +512,7 @@ call vundle#rc()
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
+"Bundle 'gmarik/vundle'
 
 " My Bundles here:
 "
@@ -520,6 +523,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'jnurmine/Zenburn'
+Bundle 'eiginn/netrw'
 " vim-scripts repos
 Bundle 'taglist.vim'
 " non github repos
@@ -594,3 +598,6 @@ highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 match ExtraWhitespace /\s\+\%#\@<!$/
 " :match ExtraWhitespace /\s\+$/ 
 " don't show when im typing? 
+
+
+let g:syntastic_python_checkers = ['pyflakes']
