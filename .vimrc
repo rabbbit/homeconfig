@@ -136,8 +136,8 @@ vmap r "_dP
 " nnoremap <S-F6> <C-W>W
 
 " Cycle through open files with Ctrl-N and Ctrl-P
-nnoremap <C-N> :next<CR>
-nnoremap <C-P> :prev<CR>
+" nnoremap <C-N> :next<CR>
+" nnoremap <C-P> :prev<CR>
 
 " tab navigation with alt left / alt right
 nnoremap  <a-right>  gt
@@ -462,7 +462,8 @@ endif
 " g:solarized_visibility= "normal"| "high" or "low"
 " ------------------------------------------------
 
-:set cursorline cursorcolumn
+set t_Co=256
+set cursorline cursorcolumn
 let g:zenburn_unified_CursorColumn = 1
 let g:zenburn_high_Contrast=0
 let g:zenburn_alternate_Visual = 1
