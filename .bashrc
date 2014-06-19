@@ -126,3 +126,8 @@ function psgrep() { ps axuf | grep -v grep | grep "$@" -i --color=auto; }
 function fname() { find . -iname "*$@*"; }
 
 set -o vi
+
+#tmux
+alias tmux="TERM=screen-256color-bce tmux"
+
+

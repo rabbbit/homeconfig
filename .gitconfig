@@ -29,3 +29,5 @@
         file-view-vpane-position = 275
         main-window-view = HistoryView
 [merge]
+[log]
+	decorate = true
