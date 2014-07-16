@@ -36,7 +36,7 @@ nnoremap <c-a> ggVG
 
 " show the status bar
 set laststatus=2
-set title
+" set title
 " set statusline=%<%f\%h%m%r%=%-20.(line=%l\ \ col=%c%V\ \ totlin=%L%)\ \ \%h%m%r%=%-39(bytval=0x%B,%n%Y%)\%P
 set statusline=%<%f\%h%m%r\ %{fugitive#statusline()}%=%-10.(line=%l\ \ col=%c%V\ \ totlin=%L%)\ \%h%m%r%=%-40(bytval=0x%B,%n%Y%)\%P
 
@@ -242,6 +242,7 @@ nnoremap <leader>tc :set cursorline!<cr>:set cursorcolumn!<cr>
 
 "syntastic
 nnoremap <F6> :Errors<cr>
+let g:syntastic_python_checkers = ['pyflakes']
 
 " taglist.vim
 nnoremap <silent> <F7> :TlistToggle<CR>
@@ -530,7 +531,7 @@ Bundle 'taglist.vim'
 " non github repos
 " Bundle 'git://git.wincent.com/command-t.git'
 " Bundle 'git://github.com/scrooloose/syntastic.git'
- " ...
+" Bundle 'bling/vim-airline'
 
  filetype plugin indent on     " required!
  "

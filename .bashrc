@@ -112,7 +112,7 @@ HISTTIMEFORMAT='%F %T '
 
 source ~/.genbashrc
 
-alias homeconfig='git --git-dir=/home/pkroliko/.homeconfig.git/ --work-tree=/home/pkroliko'
+alias homeconfig='git --git-dir=$HOME/.homeconfig.git/ --work-tree=$HOME'
 
 
 # make SQLPLUS load default configs on start
@@ -131,3 +131,10 @@ set -o vi
 alias tmux="TERM=screen-256color-bce tmux"
 
 
+#export JAVA_HOME="/usr/lib/jvm/java-7-openjdk-amd64/"
+
+
+JAVA_HOME=/usr/local/java/jdk1.7.0_45
+PATH=$PATH:$HOME/bin:$JAVA_HOME/bin
+export JAVA_HOME
+export PATH
