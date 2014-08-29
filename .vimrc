@@ -639,4 +639,15 @@ if &term =~ '^screen' && exists('$TMUX')
     execute "set <F10>=\e[21;*~"
     execute "set <F11>=\e[23;*~"
     execute "set <F12>=\e[24;*~"
+    map <Esc>OH <Home>
+    map! <Esc>OH <Home>
+    map <Esc>OF <End>
+    map! <Esc>OF <End>
+    imap <Esc>OF <End>
 endif
+
+" get rid of delay when exiting command mode
+set timeoutlen=10
+
+" gvim does it automatically ...
+:au FileChangedShell * echo "Warning: File changed on disk"

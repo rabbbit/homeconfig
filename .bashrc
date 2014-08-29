@@ -128,6 +128,7 @@ function fname() { find . -iname "*$@*"; }
 set -o vi
 
 #tmux
-alias tmux="TERM=screen-256color-bce tmux"
+alias tmux="TERM=xterm-256color tmux"
+alias ssh='TERM=xterm ssh'
 
 
