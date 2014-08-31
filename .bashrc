@@ -131,7 +131,8 @@ set -o vi
 export PATH=$PATH:$HOME/.local/bin
 
 #tmux
-alias tmux="TERM=screen-256color-bce tmux"
+alias tmux="TERM=xterm-256color tmux"
+alias ssh='TERM=xterm ssh'
 
 
 #export JAVA_HOME="/usr/lib/jvm/java-7-openjdk-amd64/"
