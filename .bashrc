@@ -127,6 +127,9 @@ function fname() { find . -iname "*$@*"; }
 
 set -o vi
 
+#pip seems to be installing things there?
+export PATH=$PATH:$HOME/.local/bin
+
 #tmux
 alias tmux="TERM=screen-256color-bce tmux"
 
