@@ -110,8 +110,6 @@ HISTSIZE=1000000
 HISTCONTROL=ignoreboth
 HISTTIMEFORMAT='%F %T '
 
-source ~/.genbashrc
-
 alias homeconfig='git --git-dir=$HOME/.homeconfig.git/ --work-tree=$HOME'
 
 
@@ -142,3 +140,7 @@ JAVA_HOME=/usr/local/java/jdk1.7.0_45
 PATH=$PATH:$HOME/bin:$JAVA_HOME/bin
 export JAVA_HOME
 export PATH
+
+export WORKON_HOME=$HOME/workspace/envs
+export PROJECT_HOME=$HOME/workspace
+source /usr/local/bin/virtualenvwrapper.sh
