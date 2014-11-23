@@ -1,6 +1,6 @@
 [user]
 	name = Pawel Krolikowski
-	email = pawel.krolikowski@geneity.co.uk
+	email = rabbbit@gmail.com
 [color]
 	branch = auto
 	diff = auto
@@ -31,3 +31,5 @@
 [merge]
 [log]
 	decorate = true
+[push]
+	defalt = simple

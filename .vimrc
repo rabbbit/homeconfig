@@ -514,35 +514,35 @@ call vundle#rc()
 
 " let Vundle manage Vundle
 " required! 
-"Bundle 'gmarik/vundle'
+"Plugin 'gmarik/vundle'
 
-" My Bundles here:
+" My Plugins here:
 "
 " original repos on github
-Bundle 'tpope/vim-pathogen'
-Bundle 'tpope/vim-fugitive'
-Bundle 'kien/ctrlp.vim'
-Bundle 'scrooloose/syntastic'
-Bundle 'tpope/vim-unimpaired'
-Bundle 'jnurmine/Zenburn'
-Bundle 'eiginn/netrw'
+Plugin 'tpope/vim-pathogen'
+Plugin 'tpope/vim-fugitive'
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'jnurmine/Zenburn'
+Plugin 'eiginn/netrw'
 " vim-scripts repos
-Bundle 'taglist.vim'
+Plugin 'taglist.vim'
 " non github repos
-" Bundle 'git://git.wincent.com/command-t.git'
-" Bundle 'git://github.com/scrooloose/syntastic.git'
-" Bundle 'bling/vim-airline'
+" Plugin 'git://git.wincent.com/command-t.git'
+" Plugin 'git://github.com/scrooloose/syntastic.git'
+" Plugin 'bling/vim-airline'
 
  filetype plugin indent on     " required!
  "
  " Brief help
- " :BundleList          - list configured bundles
- " :BundleInstall(!)    - install(update) bundles
- " :BundleSearch(!) foo - search(or refresh cache first) for foo
- " :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+ " :PluginList          - list configured bundles
+ " :PluginInstall(!)    - install(update) bundles
+ " :PluginSearch(!) foo - search(or refresh cache first) for foo
+ " :PluginClean(!)      - confirm(or auto-approve) removal of unused bundles
  "
  " see :h vundle for more details or wiki for FAQ
- " NOTE: comments after Bundle command are not allowed..
+ " NOTE: comments after Plugin command are not allowed..
  "
 
 " taglist vim config
