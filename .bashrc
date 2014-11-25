@@ -136,7 +136,8 @@ alias ssh='TERM=xterm ssh'
 #export JAVA_HOME="/usr/lib/jvm/java-7-openjdk-amd64/"
 
 
-JAVA_HOME=/usr/local/java/jdk1.7.0_45
+#JAVA_HOME=/usr/local/java/jdk1.7.0_45
+JAVA_HOME=/usr/lib/jvm/java-7-oracle
 PATH=$PATH:$HOME/bin:$JAVA_HOME/bin
 export JAVA_HOME
 export PATH
@@ -144,3 +145,6 @@ export PATH
 export WORKON_HOME=$HOME/workspace/envs
 export PROJECT_HOME=$HOME/workspace
 source /usr/local/bin/virtualenvwrapper.sh
+
+
+export ANSIBLE_NOCOWS=1

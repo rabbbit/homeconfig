@@ -33,3 +33,4 @@
 	decorate = true
 [push]
 	defalt = simple
+	default = simple

@@ -242,7 +242,8 @@ nnoremap <leader>tc :set cursorline!<cr>:set cursorcolumn!<cr>
 
 "syntastic
 nnoremap <F6> :Errors<cr>
-let g:syntastic_python_checkers = ['pyflakes']
+let g:syntastic_python_checkers = ['pyflakes', 'pep8']
+let g:syntastic_python_pep8_args = '--max-line-length=120'
 
 " taglist.vim
 nnoremap <silent> <F7> :TlistToggle<CR>
@@ -514,7 +515,7 @@ call vundle#rc()
 
 " let Vundle manage Vundle
 " required! 
-"Plugin 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
 " My Plugins here:
 "
@@ -526,8 +527,11 @@ Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'jnurmine/Zenburn'
 Plugin 'eiginn/netrw'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'hynek/vim-python-pep8-indent'
 " vim-scripts repos
 Plugin 'taglist.vim'
+        
 " non github repos
 " Plugin 'git://git.wincent.com/command-t.git'
 " Plugin 'git://github.com/scrooloose/syntastic.git'
@@ -602,7 +606,7 @@ match ExtraWhitespace /\s\+\%#\@<!$/
 " don't show when im typing? 
 
 
-let g:syntastic_python_checkers = ['pyflakes']
+let g:syntastic_python_checkers = ['pyflakes', 'pep8']
 
 
 if &term =~ '256color'
@@ -652,3 +656,6 @@ set timeoutlen=10
 
 " gvim does it automatically ...
 :au FileChangedShell * echo "Warning: File changed on disk"
+
+" disable jedi automatic auto-completion
+let g:jedi#popup_on_dot = 0
