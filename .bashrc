@@ -126,7 +126,7 @@ function fname() { find . -iname "*$@*"; }
 set -o vi
 
 #pip seems to be installing things there?
-export PATH=$PATH:$HOME/.local/bin
+#export PATH=$PATH:$HOME/.local/bin
 
 #tmux
 alias tmux="TERM=xterm-256color tmux"
@@ -146,5 +146,8 @@ export WORKON_HOME=$HOME/workspace/envs
 export PROJECT_HOME=$HOME/workspace
 source /usr/local/bin/virtualenvwrapper.sh
 
-
 export ANSIBLE_NOCOWS=1
+
+export PATH=$PATH:$HOME/sandbox/node-v0.10.36-linux-x64/bin
+export ANDROID_SDK_HOME=$HOME/sandbox/android-sdk-linux/
+export ANDROID_HOME=$HOME/sandbox/android-sdk-linux/
