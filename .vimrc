@@ -30,6 +30,7 @@ set backup " enable backups
 set guifont=Monospace\ 9
 
 set backspace=2
+let mapleader=","
 
 imap <c-a> <esc>ggVG
 nnoremap <c-a> ggVG
@@ -73,7 +74,7 @@ set showcmd
 " don't expand tabs
 set tabstop=4
 set shiftwidth=4
-set noexpandtab
+set expandtab
 " expandtab inserts tabs instead of spaces
 " set expandtab
 " smarttab changes spaces inserted at the start of a line when tabbing
@@ -101,7 +102,7 @@ set nostartofline
 " line of a window
 set ruler
 
-set textwidth=80
+set textwidth=120
 set colorcolumn=+1
 highlight ColorColumn guibg=#2d2d2d ctermbg=246
 
@@ -497,8 +498,6 @@ nnoremap # #zzzv
 nnoremap n nzzzv
 nnoremap N Nzzzv
 
-let mapleader=","
-
 nnoremap <leader><space> :noh<cr>
 
 inoremap jj <ESC>
@@ -652,10 +651,11 @@ if &term =~ '^screen' && exists('$TMUX')
 endif
 
 " get rid of delay when exiting command mode
-set timeoutlen=10
+" set timeoutlen=1000
 
 " gvim does it automatically ...
 :au FileChangedShell * echo "Warning: File changed on disk"
 
 " disable jedi automatic auto-completion
 let g:jedi#popup_on_dot = 0
+let g:jedi#show_call_signatures = 0
