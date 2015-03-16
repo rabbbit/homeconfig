@@ -243,8 +243,10 @@ nnoremap <leader>tc :set cursorline!<cr>:set cursorcolumn!<cr>
 
 "syntastic
 nnoremap <F6> :Errors<cr>
-let g:syntastic_python_checkers = ['pyflakes', 'pep8']
+" let g:syntastic_python_checkers = ['pyflakes', 'pep8']
+let g:syntastic_python_checkers = ['pep8']
 let g:syntastic_python_pep8_args = '--max-line-length=120'
+let g:syntastic_python_flake8_args = '--max-line-length=120'
 
 " taglist.vim
 nnoremap <silent> <F7> :TlistToggle<CR>
