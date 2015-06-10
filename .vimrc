@@ -2,8 +2,8 @@ set nocompatible
 
 filetype off 
 
-call pathogen#infect()
-call pathogen#helptags()
+execute pathogen#infect()
+execute pathogen#helptags()
 
 filetype plugin indent on
 syntax on
@@ -511,8 +511,9 @@ au BufReadPost fugitive://* set bufhidden=delete
 
 " VUNDLE config: https://github.com/gmarik/vundle
 "
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+filetype off 
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required! 
@@ -532,13 +533,15 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'hynek/vim-python-pep8-indent'
 " vim-scripts repos
 Plugin 'taglist.vim'
+Plugin 'jmcantrell/vim-virtualenv'
         
 " non github repos
 " Plugin 'git://git.wincent.com/command-t.git'
 " Plugin 'git://github.com/scrooloose/syntastic.git'
 " Plugin 'bling/vim-airline'
 
- filetype plugin indent on     " required!
+call vundle#end()  
+filetype plugin indent on     " required!
  "
  " Brief help
  " :PluginList          - list configured bundles
